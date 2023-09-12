@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Cabeçalho do site */
+#cabecalho {
+    background-color: #d5d5d5;
+}
+
+/* Container do cabeçalho */
+#container-cabecalho {
+    width: 77.67857142857143%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+/* Logo da 360 Corp */
+#logo {
+    height: 85px;
+    width: auto;
+}
+
+/* Botão para exibir a Navbar no responsivo */
+#botao-navbar {
+    font-size: 36px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.4s;
+}
+
+#botao-navbar:hover {
+    transform: scale(1.2);
+}
+
+/* Área da logo com o botão da Navbar */
+#area-logo-navbar {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar - Barra de navegação horizontal */
+#navbar {
+    list-style: none;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+}
+
+/* Itens da navbar */
+.navbar-item {
+    padding: 0 16px;
+}
+
+.navbar-item > a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+}
+
+.navbar-item > a:hover {
+    color: #374a2a;
+}
+
+/* Container do conteúdo do site */
+#container {
+    width: 77.67857142857143%;
+    margin: 0 auto;
+}
+
+/* Seção - Conheça a 360 Corp */
+#secao-conheca {
+    width: 100%;
+    background-color: #2b9546;
+    color: white;
+    margin: 18px 0;
+}
+
+/* Conteúdo escrito da Conheça a 360 Corp */
+#secao-conheca-escrito {
+    width: 74.52415812591508%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+    visibility: hidden;
+}
+
+/* Título da Conheça a 360 Corp */
+#secao-conheca-titulo {
+    font-weight: normal;
+    font-size: 58px;
+    padding: 48px 0;
+}
+
+/* Parágrafo da Conheça a 360 Corp */
+#secao-conheca-paragrafo {
+    font-size: 26px;
+    padding-bottom: 48px;
+}
+
+/* Seção - Sobre a empresa */
+#secao-sobre {
+    padding: 0 16px;
+    background-color: #d5d5d5;
+    margin: 18px 0;
+}
+
+/* Conteúdo escrito do Sobre a empresa */
+#secao-sobre-escrito {
+    display: flex;
+    align-items: center;
+    padding: 38px 0;
+    visibility: hidden;
+}
+
+/* Título do Sobre a empresa */
+#secao-sobre-titulo {
+    font-weight: normal;
+    font-size: 50px;
+    width: 48%;
+    text-align: center;
+}
+
+/* Paragráfo do Sobre a empresa */
+#secao-sobre-paragrafo {
+    width: 50%;
+}
+
+#secao-sobre-paragrafo > p {
+    font-size: 26px;
+}
+
+/* Seção - Como o APP funciona */
+#secao-app {
+    background-color: #996734;
+    color: white;
+    padding: 16px 0;
+    margin: 18px 0;
+}
+
+#secao-app-escrito {
+    visibility: hidden;
+}
+
+/* Título de Como o APP funciona */
+#secao-app-titulo {
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 48px;
+}
+
+/* Container das instrução de Como o APP funciona */
+#secao-app-instrucoes {
+    width: 84.9194729136164%;
+    margin: 0 auto;
+    padding: 0 26px;
+}
+
+/* Cada instrução individual */
+.instrucao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instrucao > p {
+    font-size: 28px;
+    width: 65%;
+    text-align: center;
+}
+
+/* Imagens dos celulares */
+.instrucao > img {
+    width: 16%;
+    transition: all 0.2s;
+}
+
+.instrucao > img:hover {
+    transform: scale(1.1);
+}
+
+/* Celular no lado esquerdo */
+.esquerda {
+    flex-direction: row;
+}
+
+/* Celular no lado direito */
+.direita {
+    flex-direction: row-reverse;
+}
+
+/* Rodapé do site (Seção - Fale conosco) */
+#secao-fale-conosco {
+    background-color: #dbba99;
+    text-align: center;
+    padding: 18px;
+    margin-top: 26px;
+}
+
+/* Título do rodapé */
+#secao-fale-conosco-escrito {
+    visibility: hidden;
+}
+
+#secao-fale-conosco-titulo {
+    font-size: 38px;
+    padding-bottom: 16px;
+}
+
+/* E-Mail de contato da empresa */
+#email-contato {
+    font-size: 20px;
+    padding-bottom: 16px;
+    word-wrap: break-word;
+}
+
+#email-contato > i {
+    margin-right: 6px;
+}
+
+/* Área das redes sociais */
+#redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+/* Icones das redes sociais */
+#redes-sociais > a > i {
+    font-size: 54px;
+    padding: 8px 0;
+    color: black;
+    transition: all 0.4s;
+}
+
+#redes-sociais > a > i:hover {
+    transform: scale(1.2);
+}
+
+/* Espacamento entre os icones das redes sociais */
+#espacamento {
+    margin: 26px;
+}
+
+#perfil-inst-tiktok {
+    font-size: 26px;
+}
+
+/* Botão para subir a página para o topo */
+#botao-subir {
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    font-size: 36px;
+    background-color: #2b9546;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#botao-subir:hover {
+    transform: scale(1.1);
+}
+
+/* Para deixar o site responsivo, ou seja que ele se adapte aos tamanhos diferentes de tela */
+@media (max-width: 768px) {
+    #container-cabecalho {
+        flex-direction: column;
+    }
+    
+    #area-logo-navbar {
+        width: 100%;
+    }
+
+    #botao-navbar {
+        display: block;
+    }
+
+    /* -------------------------- */
+    #container-navbar {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+    @keyframes exibir-itens-navbar {
+        0% {
+            overflow: hidden;
+        }
+
+        100% {
+            overflow: visible;
+        }
+    }
+    
+    #container-navbar.exibir-navbar {
+        height: 260px;
+        animation: exibir-itens-navbar;
+        animation-delay: 0.2s;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-item {
+        padding: 18px 0;
+    }
+
+    .separador-navbar {
+        display: none;
+    }
+
+    /* -------------------------- */    
+    #secao-conheca-escrito {
+        width: 95%;
+    }
+
+    /* -------------------------- */
+    #secao-sobre-escrito {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #secao-sobre-titulo {
+        padding-bottom: 48px;
+        width: 100%;
+    }
+    
+    #secao-sobre-paragrafo {
+        text-align: left;
+        width: 96%;
+    }
+
+    /* -------------------------- */
+    #secao-app-titulo {
+        padding-bottom: 36px;
+    }
+
+    .instrucao > p {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .instrucao > img {
+        width: 30%;
+    }
+
+    .esquerda {
+        flex-direction: column;
+    }
+
+    .direita {
+        flex-direction: column;
+    }
+}
